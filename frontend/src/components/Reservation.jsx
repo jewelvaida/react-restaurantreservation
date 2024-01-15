@@ -11,7 +11,9 @@ const Reservation = () => {
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [phone, setPhone] = useState(0);
+  const [phone, setPhone] = useState("");
+  const [branch, setBranch] = useState("");
+  const [pax, setPax] = useState("");
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
@@ -19,7 +21,16 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         "http://localhost:4000/api/v1/reservation/send",
-        { firstName, lastName, email, phone, date, time },
+        {
+          firstName,
+          lastName,
+          email,
+          phone,
+          date,
+          time,
+          branch,
+          pax,
+        },
         {
           headers: {
             "Content-Type": "application/json",
@@ -30,10 +41,12 @@ const Reservation = () => {
       toast.success(data.message);
       setFirstName("");
       setLastName("");
-      setPhone(0);
+      setPhone("");
       setEmail("");
       setTime("");
       setDate("");
+      setBranch("");
+      setPax("");
       navigate("/success");
     } catch (error) {
       toast.error(error.response.data.message);
@@ -93,14 +106,27 @@ const Reservation = () => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
-                
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Branch"
+                  value={branch}
+                  onChange={(e) => setBranch(e.target.value)}
+                />
+                <input
+                  type="number"
+                  placeholder="Pax"
+                  value={pax}
+                  onChange={(e) => setPax(e.target.value)}
+                />
               </div>
               <button type="submit" onClick={handleReservation}>
-                  RESERVE NOW{" "}
-                  <span>
-                    <HiOutlineArrowNarrowRight />
-                  </span>
-                </button>
+                RESERVE NOW{" "}
+                <span>
+                  <HiOutlineArrowNarrowRight />
+                </span>
+              </button>
             </form>
           </div>
         </div>
