@@ -13,7 +13,7 @@ const Reservation = () => {
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
   const [branch, setBranch] = useState("");
-  const [person, setPax] = useState("");
+  const [person, setPerson] = useState("");
   const [buttonClicked, setButtonClicked] = useState(false); // New state variable
   const navigate = useNavigate();
 
