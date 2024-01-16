@@ -1,4 +1,5 @@
 import "./App.css";
+import "./mediaqueries.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Home from "./Pages/Home";

@@ -11,19 +11,19 @@
   display: none;
 }
 
-/********************** HERO SECTION COMPONENT STYLING **************************/
-/**********************************************************************************************************************/
+/* Styling for nav section */
 nav {
   display: flex;
   max-width: 1500px;
   min-width: 1500px;
   padding: 25px 10px 40px 10px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   justify-content: space-between;
   position: relative;
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  background: #c9a28e;
 }
 nav::after {
   content: "";
@@ -32,25 +32,34 @@ nav::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(201, 201, 201);
+  
 }
-nav .logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px; 
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 nav .navLinks {
   flex: 2;
 }
 nav .navLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  
 }
 nav .navLinks .links {
   display: flex;
   gap: 25px;
+  margin-right: 10px;
 }
 nav .navLinks .links a {
   text-decoration: none;
@@ -84,78 +93,8 @@ nav .hamburger {
 nav svg {
   font-size: 1.75rem;
 }
-@media (max-width: 1520px) {
-  nav {
-    min-width: 100%;
-    padding: 25px 20px 40px 20px;
-  }
-}
-@media (max-width: 1100px) {
-  nav {
-    z-index: 20;
-    position: unset;
-    background: #ffffff63;
-    padding: 10px 30px;
-  }
-  nav::after {
-    content: "";
-    display: none;
-  }
-  nav .hamburger {
-    display: flex;
-  }
-  nav .navLinks {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: -100%;
-    background: #fff;
-    width: 100%;
-    left: 0;
-    padding: 15px 7.5px;
-    z-index: -1;
-    transition: 0.3s;
-  }
-  nav .showmenu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 67px;
-    background: #fff;
-    width: 100%;
-    left: 0;
-    padding: 15px 7.5px;
-    transition: 0.3s;
-    margin: 0 15px;
-    width: 96.7vw;
-    margin-right: 30px;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-  }
-  nav .showmenu .links {
-    flex-direction: column;
-    text-align: center;
-  }
-  nav .menuBtn {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 800px) {
-  nav .showmenu {
-    width: 96vw;
-  }
-}
-@media (max-width: 650px) {
-  nav .showmenu {
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
-  }
-}
-/**********************************************************************************************************************/
 
-/********************** HERO SECTION COMPONENT STYLING **************************/
-/**********************************************************************************************************************/
+/* Styling for home section */
 .heroSection {
   display: flex;
   flex-direction: column;
@@ -185,33 +124,29 @@ nav svg {
   display: flex;
   width: 100%;
 }
+.largeBox .title{
+  display: flex;
+  justify-content: center;
+}
+.dishes_title{
+  display: flex;
+  justify-content:right;
+}
 .heroSection .container .banner .title {
   font-size: 8.5rem;
   font-weight: 200;
 }
-.heroSection .container .banner .textAndLogo {
-  width: 50%;
-}
-.heroSection .container .banner .textWithSvg {
-  position: relative;
-}
-.heroSection .container .banner .textWithSvg img {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+
 .heroSection .container .banner:first-child .dishes_title {
   display: none;
 }
-.heroSection .container .banner:first-child .imageBox {
-  width: 50%;
-}
-.heroSection .container .banner:last-child .imageBox {
-  width: 100%;
-}
-.heroSection .container .banner .imageBox img {
-  width: 300px;
-  height: 385px;
+
+
+.imageBox img{
+  border-radius: 25px;
+  width: 400px;
+  height: 395px;
+  margin-top: 10px;
 }
 .heroSection .container .banner:last-child .imageBox {
   text-align: end;
@@ -219,112 +154,8 @@ nav svg {
 .heroSection .container .banner:last-child {
   flex: 1;
 }
-@media (max-width: 1280px) {
-  .heroSection .container {
-    width: 100%;
-    min-width: fit-content;
-    padding: 30px 20px;
-  }
-}
-@media (max-width: 1072px) {
-  .heroSection .container .banner .title {
-    font-size: 6.5rem;
-  }
-  .heroSection .container .banner .imageBox img {
-    width: 250px;
-    height: 335px;
-  }
-}
-@media (max-width: 880px) {
-  .heroSection .container .banner .title {
-    font-size: 6rem;
-  }
-  .heroSection .container .banner .imageBox img {
-    width: 250px;
-    height: 265px;
-  }
-}
-@media (max-width: 830px) {
-  .heroSection .container .banner:last-child .imageBox {
-    height: 350px;
-  }
-  .heroSection .container .banner:last-child .imageBox img {
-    display: none;
-  }
-  .heroSection .container .banner .combined_boxes {
-    flex-direction: column-reverse;
-  }
-  .heroSection .container .banner .textAndLogo {
-    width: 100%;
-    text-align: end;
-  }
-  .heroSection .container .banner .textAndLogo .title,
-  .heroSection .container .banner .textAndLogo .logo {
-    margin-right: 60px;
-  }
-  .heroSection .container .banner:last-child .dishes_title {
-    margin-top: 65px;
-  }
-  .heroSection .container .banner .imageBox img {
-    width: 100%;
-  }
-}
-@media (max-width: 720px) {
-  .heroSection .container .banner .title {
-    font-size: 4.5rem;
-  }
-}
-@media (max-width: 520px) {
-  .heroSection .container .banner:last-child .dishes_title {
-    display: none;
-  }
-  .heroSection .container .banner:first-child .dishes_title {
-    display: block;
-  }
-  .heroSection .container .banner:first-child {
-    width: 100%;
-  }
-  .heroSection .container .banner:last-child {
-    display: none;
-  }
-  .heroSection .container .banner .title {
-    text-align: center;
-  }
-  .heroSection .container .banner .textAndLogo .title,
-  .heroSection .container .banner .textAndLogo .logo {
-    margin-right: 0;
-  }
-  .heroSection .container .banner .textWithSvg {
-    width: fit-content;
-    margin: 0 auto;
-  }
-  .heroSection .container .banner .textAndLogo {
-    text-align: center;
-  }
-  .heroSection .container .banner:first-child .imageBox {
-    width: 100%;
-    text-align: center;
-  }
-  .heroSection .container .banner:first-child .imageBox img {
-    width: 290px;
-    height: 350px;
-  }
-}
-@media (max-width: 650px) {
-  .heroSection {
-    padding: 0;
-  }
-}
-@media (max-width: 330px) {
-  .heroSection .container .banner:first-child .imageBox img {
-    width: 100%;
-    height: auto;
-  }
-}
-/**********************************************************************************************************************/
 
-/******************* ABOUT US COMPONENT STYLING **************/
-/**********************************************************************************************************************/
+/* Styling for about section */
 .about {
   display: flex;
   min-height: 100vh;
@@ -392,50 +223,8 @@ nav svg {
   background: #fff;
   color: #111;
 }
-@media (max-width: 1520px) {
-  .about {
-    padding: 30px 20px;
-  }
-  .about .container {
-    min-width: fit-content;
-  }
-}
-@media (max-width: 1050px) {
-  .about .container .banner:first-child {
-    padding-right: 30px;
-  }
-  .about .container .banner .mid {
-    width: 100%;
-    margin: 20px 0;
-  }
-}
-@media (max-width: 786px) {
-  .about .container {
-    flex-direction: column-reverse;
-  }
-  .about .container .banner img {
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  .about .container .banner:first-child {
-    padding: 0;
-  }
-}
-@media (max-width: 530px) {
-  .heading {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 450px) {
-  .about .container .banner img {
-    width: 100%;
-  }
-}
-/**********************************************************************************************************************/
 
-/* QUALITIES COMPONENT STYLING */
-/*********************************************************************************************************************/
+/* Styling for qualities section */
 .qualities {
   display: flex;
   height: fit-content;
@@ -471,43 +260,8 @@ nav svg {
   color: #333;
   font-weight: 300;
 }
-@media (max-width: 1520px) {
-  .qualities .container {
-    min-width: 100%;
-    padding: 30px 20px;
-  }
-}
-@media (max-width: 1190px) {
-  .qualities .container .card .title {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 1080px) {
-  .qualities .container .card {
-    padding: 0 30px;
-  }
-  .qualities .container {
-    padding: 0;
-  }
-}
-@media (max-width: 635px) {
-  .qualities .container .card {
-    flex: none;
-    width: 400px;
-    padding: 0;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 485px) {
-  .qualities .container .card {
-    width: 100%;
-  }
-}
-/*********************************************************************************************************************/
 
-/* MENU COMPONENT STYLING */
-/*********************************************************************************************************************/
+/* Styling for menu section */
 .menu {
   display: flex;
   min-height: 100vh;
@@ -565,45 +319,8 @@ nav svg {
   transition: 0.3s;
   transform: scale(1.03);
 }
-@media (max-width: 1520px) {
-  .menu .container {
-    min-width: 100%;
-  }
-}
-@media (max-width: 1200px) {
-  .menu .container .dishes_container .card img {
-    height: 325px;
-  }
-  .menu .container .dishes_container .card h3 {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 1000px) {
-  .menu .container .dishes_container .card {
-    width: 50%;
-  }
-  .menu .container .dishes_container .card img {
-    height: auto;
-  }
-  .menu .container .dishes_container .card h3 {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 600px) {
-  .menu .container .dishes_container .card h3 {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 450px) {
-  .menu .container .dishes_container .card {
-    width: 100%;
-    padding: 20px 0;
-  }
-}
-/*********************************************************************************************************************/
 
-/* TEAM COMPONENT STYLING */
-/*********************************************************************************************************************/
+/* Styling for teams section */
 .team {
   display: flex;
   min-height: 60vh;
@@ -653,41 +370,8 @@ nav svg {
   font-weight: 300;
   color: #333;
 }
-@media (max-width: 1520px) {
-  .team .container {
-    min-width: 100%;
-  }
-}
-@media (max-width: 1050px) {
-  .team .container .team_container .card img {
-    width: 135px;
-  }
-}
-@media (max-width: 910px) {
-  .team .container .team_container .card h3 {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 810px) {
-  .team .container .team_container .card {
-    width: 50%;
-  }
-  .team .container .team_container .card img {
-    width: 220px;
-  }
-}
-@media (max-width: 550px) {
-  .team .container .team_container .card {
-    width: 100%;
-  }
-  .team .container .team_container .card img {
-    width: 150px;
-  }
-}
-/*********************************************************************************************************************/
 
-/* WHOAREWE COMPONENT STYLING */
-/*********************************************************************************************************************/
+/* Styling for who_are_we section */
 .who_are_we {
   display: flex;
   justify-content: center;
@@ -732,51 +416,10 @@ nav svg {
   left: -80px;
   top: 0;
 }
-@media (max-width: 1520px) {
-  .who_are_we .container {
-    min-width: 100%;
-    padding: 20px;
-  }
-}
-@media (max-width: 1180px) {
-  .who_are_we .container .image_banner img {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (max-width: 700px) {
-  .who_are_we .container .image_banner {
-    order: -1;
-    margin-bottom: 2rem;
-  }
-  .who_are_we .container .text_banner {
-    flex-direction: row;
-  }
-  .who_are_we .container {
-    flex-direction: column;
-  }
-  .who_are_we .container .image_banner img {
-    width: 400px;
-  }
-  .who_are_we .container .text_banner .card {
-    width: 50%;
-  }
-}
-@media (max-width: 400px) {
-  .who_are_we .container .text_banner {
-    flex-direction: column;
-  }
-  .who_are_we .container .text_banner .card {
-    width: 100%;
-    margin-bottom: 1.2rem;
-  }
-}
-/*********************************************************************************************************************/
 
-/******************* NOT FOUND PAGE STYLING **************/
-/**********************************************************************************************************************/
+/* Styling for footer section */
 footer {
-  background: #f9fbf2;
+  background: #c9a28e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,31 +469,8 @@ footer .container .banner .right {
   font-size: 18px;
   color: #333;
 }
-@media (max-width: 1520px) {
-  footer .container {
-    min-width: 100%;
-    padding: 0 20px;
-  }
-}
-@media (max-width: 530px) {
-  footer .container .banner:first-child {
-    flex-direction: column;
-    gap: 15px;
-  }
-  footer .container .banner:first-child .left,
-  footer .container .banner .right {
-    text-align: center;
-  }
-  footer .container .banner {
-    flex-direction: column;
-    text-align: center;
-    gap: 7px;
-  }
-}
-/**********************************************************************************************************************/
 
-/******************* RESERVATION COMPONENT STYLING **************/
-/**********************************************************************************************************************/
+/* Styling for reservation section */
 .reservation {
   display: flex;
   min-height: 75vh;
@@ -879,9 +499,9 @@ footer .container .banner .right {
   background: #fff;
   height: 100%;
   padding: 20px;
-  box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
-  -webkit-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
-  -moz-box-shadow: -1px 0px 37px 0px rgba(152, 87, 191, 0.75);
+  box-shadow: -1px 0px 37px 0px #c9a28e   ;
+  -webkit-box-shadow: -1px 0px 37px 0px #c9a28e;
+  -moz-box-shadow: -1px 0px 37px 0px #c9a28e;
 }
 
 .reservation .container .banner .reservation_form_box form div {
@@ -926,7 +546,7 @@ footer .container .banner .right {
   form
   input[type="email"]:focus {
   outline: none;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid #c9a28e;
 }
 
 .reservation .container .banner .reservation_form_box h1 {
@@ -951,6 +571,8 @@ footer .container .banner .right {
 
 .reservation .container .banner img {
   width: 550px;
+  height: 500px;
+  border-radius: 25px;
 }
 
 .reservation .container .banner .reservation_form_box form button {
@@ -977,57 +599,8 @@ footer .container .banner .right {
   color: #fff;
 }
 
-@media (max-width: 1520px) {
-  .reservation .container {
-    min-width: 100%;
-  }
-}
-@media (max-width: 1040px) {
-  .reservation .container .banner {
-    padding: 20px;
-  }
-}
-@media (max-width: 1350px) {
-  .reservation .container .banner img {
-    width: 42vw;
-  }
-}
-@media (max-width: 885px) {
-  .reservation .container {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .reservation .container .banner img {
-    width: 70vw;
-  }
-  .reservation .container .banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 660px) {
-  .reservation .container .banner img {
-    width: 100%;
-  }
-}
-@media (max-width: 450px) {
-  .reservation .container .banner .reservation_form_box {
-    width: 100%;
-  }
-  .reservation .container .banner .reservation_form_box h1 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 325px) {
-  .reservation .container .banner .reservation_form_box h1 {
-    font-size: 1.6rem;
-  }
-}
-/**********************************************************************************************************************/
 
-/******************* NOT FOUND PAGE STYLING **************/
-/**********************************************************************************************************************/
+/* Styling not found page */
 .notFound {
   display: flex;
   min-height: 100vh;
@@ -1086,15 +659,3 @@ footer .container .banner .right {
   background: #fff;
   color: #111;
 }
-@media (max-width: 600px) {
-  .notFound {
-    padding: 30px 20px;
-  }
-  .notFound .container img {
-    width: 100%;
-  }
-  .notFound .container h1 {
-    font-size: 1.75rem;
-  }
-}
-/**********************************************************************************************************************/

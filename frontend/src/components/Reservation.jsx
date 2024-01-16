@@ -13,11 +13,13 @@ const Reservation = () => {
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
   const [branch, setBranch] = useState("");
-  const [pax, setPax] = useState("");
+  const [person, setPax] = useState("");
+  const [buttonClicked, setButtonClicked] = useState(false); // New state variable
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
     e.preventDefault();
+    setButtonClicked(true); // Set the buttonClicked state to true when the button is clicked
     try {
       const { data } = await axios.post(
         "http://localhost:4000/api/v1/reservation/send",
@@ -29,7 +31,7 @@ const Reservation = () => {
           date,
           time,
           branch,
-          pax,
+          person,
         },
         {
           headers: {
@@ -46,18 +48,31 @@ const Reservation = () => {
       setTime("");
       setDate("");
       setBranch("");
-      setPax("");
+      setPerson("");
       navigate("/success");
     } catch (error) {
       toast.error(error.response.data.message);
     }
   };
 
+  // Log the values and button status to the console
+  console.log("Button Clickeds:", buttonClicked);
+  console.log("User Input Values:", {
+    firstName,
+    lastName,
+    email,
+    phone,
+    date,
+    time,
+    branch,
+    person,
+  });
+
   return (
     <section className="reservation" id="reservation">
       <div className="container">
-        <div className="banner">
-          <img src="/reservation.png" alt="res" />
+        <div className="banner image">
+          <img src="/steak.jpeg" alt="res" />
         </div>
         <div className="banner">
           <div className="reservation_form_box">
@@ -117,8 +132,8 @@ const Reservation = () => {
                 <input
                   type="number"
                   placeholder="Pax"
-                  value={pax}
-                  onChange={(e) => setPax(e.target.value)}
+                  value={person}
+                  onChange={(e) => setPerson(e.target.value)}
                 />
               </div>
               <button type="submit" onClick={handleReservation}>

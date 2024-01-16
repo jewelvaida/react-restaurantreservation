@@ -30,7 +30,7 @@ export const sendReservation = async (req, res, next) => {
       branch,
       person,
     });
-    res.status(201).json({
+    res.status(200).json({
       success: true,
       message:
         "Reservation sent succesfully! Please wait for an SMS or email from the team at your selected branch for confirmation",

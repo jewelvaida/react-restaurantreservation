@@ -4,20 +4,20 @@
             {
                 "id": 1,
                 "image": "./quality_food.svg",
-                "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "title": "EXISTENTIAL QUALITY",
+                "description": "Here at Heaven's Kitchen, we follow the mantra, 'Divine food comes from Divine quality'. In order to achieve this, our ingredients come in fresh, and prepared with perfection." 
             },
             {
                 "id": 2,
                 "image": "./super_taste.svg",
-                "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
+                "title": "IMMACULATE FLAVOURS",
+                "description": "We offer food that are figuratively out of this world. Even the Gods come in to dine in our halls." 
             },
             {
                 "id": 3,
-                "image": "./fast_delivery.svg",
-                "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "image": "./chef.png",
+                "title": "EXCEPTIONAL CHEFS",
+                "description": "You can never find a chef that has less than three michelin stars in Heaven's Kitchen. In order to serve exceptional dishes, it must be prepared by exceptional chefs." 
             }
         ],
         "dishes": [
@@ -159,7 +159,7 @@
             },
             {
                 "id": 4,
-                "title": "TEAM",
+                "title": "OWNERS",
                 "link": "team"
             },
             {
