@@ -5,7 +5,11 @@ const HeroSection = () => {
   return (
     <section className="heroSection" id="heroSection">
       <div className="container">
-        <div className="banner">
+        <div className="tabloname">
+          <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLO</h1>
+          <h3>KITCHEN X CAFE</h3>
+        </div>
+        {/* <div className="banner">
           <div className="largeBox">
             <h1 className="title">HEAVEN'S</h1>
           </div>
@@ -20,7 +24,7 @@ const HeroSection = () => {
             <img src="/food1.jpg" alt="hero2" />
           </div>
           <h1 className="title dishes_title">KITCHEN</h1>
-        </div>
+        </div> */}
       </div>
     </section>
   );

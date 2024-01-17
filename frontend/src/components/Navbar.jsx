@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src="/hk.jpg" alt="" />
+        <img src="/tablo.png" alt="" />
       </div>
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className="links">

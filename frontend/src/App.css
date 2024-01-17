@@ -23,7 +23,7 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  background: #c9a28e;
+  background: rgb(48,116,124);
 }
 nav::after {
   content: "";
@@ -32,14 +32,18 @@ nav::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  
+}
+.wholenav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 20%;
+  height: 10%;
   overflow: hidden;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .logo img {
@@ -54,7 +58,6 @@ nav .navLinks {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 nav .navLinks .links {
   display: flex;
@@ -63,13 +66,13 @@ nav .navLinks .links {
 }
 nav .navLinks .links a {
   text-decoration: none;
-  color: #555;
+  color: black;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1.4px;
 }
 nav .navLinks .links a:hover {
-  color: #222;
+  color: whitesmoke;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -96,17 +99,31 @@ nav svg {
 
 /* Styling for home section */
 .heroSection {
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh;
-  justify-content: space-between;
-  align-items: center;
-  background: url(/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  padding: 0 15px;
-}
+      display: flex;
+      flex-direction: column;
+      min-height: 80vh;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      animation: changeBackground 50s infinite; /* Change image every 12 seconds, adjust as needed */
+      background-size: cover;
+      background-position: right;
+    }
+
+    @keyframes changeBackground {
+      0%, 100% {
+        background-image: url(/bg.png);
+      }
+      25% {
+        background-image: url(/bg2.png);
+      }
+      50% {
+        background-image: url(/bg3.png);
+      }
+      75% {
+        background-image: url(/bg4.png);
+      }
+    }
 .heroSection .container {
   display: flex;
   max-width: 1200px;
@@ -124,13 +141,18 @@ nav svg {
   display: flex;
   width: 100%;
 }
-.largeBox .title{
+.tabloname {
+      border: 2px solid #333; /* Border color */
+      padding: 10px; /* Padding inside the box */
+      width: fit-content; /* Make the box width fit its content */
+    }
+.largeBox .title {
   display: flex;
   justify-content: center;
 }
-.dishes_title{
+.dishes_title {
   display: flex;
-  justify-content:right;
+  justify-content: right;
 }
 .heroSection .container .banner .title {
   font-size: 8.5rem;
@@ -141,8 +163,7 @@ nav svg {
   display: none;
 }
 
-
-.imageBox img{
+.imageBox img {
   border-radius: 25px;
   width: 400px;
   height: 395px;
@@ -499,7 +520,7 @@ footer .container .banner .right {
   background: #fff;
   height: 100%;
   padding: 20px;
-  box-shadow: -1px 0px 37px 0px #c9a28e   ;
+  box-shadow: -1px 0px 37px 0px #c9a28e;
   -webkit-box-shadow: -1px 0px 37px 0px #c9a28e;
   -moz-box-shadow: -1px 0px 37px 0px #c9a28e;
 }
@@ -598,7 +619,20 @@ footer .container .banner .right {
   border-radius: 100%;
   color: #fff;
 }
+div select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
+/* Style for the dropdown options */
+div select option {
+  font-size: 16px;
+}
 
 /* Styling not found page */
 .notFound {
