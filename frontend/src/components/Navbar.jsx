@@ -7,9 +7,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <nav>
-      <div className="logo">
-        <img src="/tablo.png" alt="" />
-      </div>
+      <div className="logo"><img src="/tablo.png" alt="" /></div>
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className="links">
           {data[0].navbarLinks.map((element) => {
@@ -26,7 +24,6 @@ const Navbar = () => {
             );
           })}
         </div>
-      </div>
        <Link
           to="menu"
           spy={true}
@@ -36,6 +33,7 @@ const Navbar = () => {
         >
           OUR MENU
         </Link>
+        </div>
       <div className="hamburger" onClick={() => setShow(!show)}>
         <GiHamburgerMenu />
       </div>

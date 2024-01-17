@@ -125,7 +125,9 @@ nav svg {
       }
     }
 .heroSection .container {
-  display: flex;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tabloname {
       border: 8px solid black; 
