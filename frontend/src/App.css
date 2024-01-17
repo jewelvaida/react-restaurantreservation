@@ -125,27 +125,19 @@ nav svg {
       }
     }
 .heroSection .container {
-  display: flex;
-  max-width: 1200px;
-  min-width: 1200px;
-}
-.heroSection .container .banner:first-child {
-  flex: 2;
-  display: flex;
-  flex-wrap: wrap;
-}
-.heroSection .container .banner .largeBox {
-  width: 100%;
-}
-.heroSection .container .banner .combined_boxes {
-  display: flex;
-  width: 100%;
+  display: flex;;
 }
 .tabloname {
-      border: 2px solid #333; /* Border color */
-      padding: 10px; /* Padding inside the box */
-      width: fit-content; /* Make the box width fit its content */
+      border: 8px solid black; 
+      padding: 50px; 
+      width: fit-content;
+      margin-top: 7rem;
     }
+.tabloname h1, .tabloname h3{
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(26, 25, 25);
+}
 .largeBox .title {
   display: flex;
   justify-content: center;
