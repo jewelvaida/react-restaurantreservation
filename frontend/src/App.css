@@ -631,7 +631,7 @@ div select option {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url(/background.svg);
+  background:rgb(48,116,124);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
