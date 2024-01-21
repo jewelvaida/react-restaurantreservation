@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const About = () => {
   return (
@@ -19,15 +17,15 @@ const About = () => {
             and created to be a place of creativity, community, and comfort
             food.
           </p>
-          <Link to={"menu"} spy={true} smooth={true} duration={500}>
-            Explore Menu{" "}
-            <span>
-              <HiOutlineArrowNarrowRight />
-            </span>
-          </Link>
+        
+          <a href="https://drive.google.com/file/d/1sMrACUVH50Dys16jr7OTCwJ1YbgzxCOu/view">
+            Explore Menu
+          </a>
         </div>
         <div className="banner">
-          <img src="/about.png" alt="about" />
+          <div>
+            <img src="table.jpg" alt="about" />
+          </div>
         </div>
       </div>
     </section>
