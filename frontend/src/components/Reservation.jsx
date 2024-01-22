@@ -15,7 +15,12 @@ const Reservation = () => {
   const [branch, setBranch] = useState("");
   const [person, setPerson] = useState("");
   const [buttonClicked, setButtonClicked] = useState(false); // New state variable
-  const branches = ["BF Resort" , "BF Homes", "Sct. Borromeo" , "South, Las Pinas"];
+  const branches = [
+    "BF Resort",
+    "BF Homes",
+    "Sct. Borromeo",
+    "South, Las Pinas",
+  ];
   const navigate = useNavigate();
 
   const handleReservation = async (e) => {
@@ -124,17 +129,19 @@ const Reservation = () => {
                 />
               </div>
               <div>
-                 <select
-    value={branch}
-    onChange={(e) => setBranch(e.target.value)}
-  >
-    <option value="" disabled>Select a Branch</option>
-    {branches.map((branchOption) => (
-      <option key={branchOption} value={branchOption}>
-        {branchOption}
-      </option>
-    ))}
-  </select>
+                <select
+                  value={branch}
+                  onChange={(e) => setBranch(e.target.value)}
+                >
+                  <option value="" disabled>
+                    Select a Branch
+                  </option>
+                  {branches.map((branchOption) => (
+                    <option key={branchOption} value={branchOption}>
+                      {branchOption}
+                    </option>
+                  ))}
+                </select>
                 <input
                   type="number"
                   placeholder="Pax"
