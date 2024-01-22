@@ -16,10 +16,6 @@ app.use(
   })
 );
 
-mongoose.connect(
-  "mongodb+srv://defenCy:4UXiFpoSrSY48Bc5@cluster0.plfnwl3.mongodb.net/?retryWrites=true&w=majority"
-);
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1/reservation", reservationRouter);
