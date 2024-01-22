@@ -4,10 +4,12 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="banner">  
-          <div className="left"><img src="/tablo.png" alt="" /></div>
+        <div className="banner">
+          <div className="left">
+            <img src="/tablo.png" alt="" />
+          </div>
           <div className="right">
-            <p className="p1">Open: 09:00 AM - 10:00 PM</p>
+            <p className="p1">Open: 10:00 AM - 12:00 AM</p>
           </div>
         </div>
         <div className="banner">
