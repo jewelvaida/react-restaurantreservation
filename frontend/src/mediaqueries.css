@@ -5,7 +5,6 @@
   }
 }
 
-
 @media (max-width: 1520px) {
   .about {
     padding: 30px 20px;
@@ -39,25 +38,23 @@
   .reservation .container .banner img {
     width: 42vw;
   }
-.qualities .container  .card img {
+  .qualities .container .card img {
     height: 450px;
     width: 400px;
   }
- .qualities .container  .card h3 {
+  .qualities .container .card h3 {
     font-size: 1.3rem;
   }
-  
 }
+
 @media (max-width: 1290px) {
- .about .container .banner img 
-  {
+  .about .container .banner img {
     width: 90%;
   }
-  .qualities .container h1
-  {
+  .qualities .container h1 {
     font-size: 25px;
   }
-  .qualities .container{
+  .qualities .container {
     font-size: 20px;
   }
 }
@@ -68,25 +65,20 @@
     min-width: fit-content;
     padding: 30px 20px;
   }
-  
-
 }
 
 @media (max-width: 1200px) {
   .menu .container .dishes_container .card img {
     height: 325px;
   }
- 
-  .qualities .container  .card img {
+
+  .qualities .container .card img {
     height: 450px;
     width: 400px;
   }
- .qualities .container  .card h3 {
+  .qualities .container .card h3 {
     font-size: 1.3rem;
   }
-
-
-  
 }
 
 @media (max-width: 1190px) {
@@ -100,11 +92,9 @@
     height: 100%;
     width: 100%;
   }
-
 }
 
 @media (max-width: 1100px) {
-  
   nav {
     z-index: 20;
     position: unset;
@@ -164,15 +154,16 @@
   }
   .team .container .team_container .card img {
     width: 135px;
-  } 
-  .qualities .container  .card img {
+  }
+  .qualities .container .card img {
     height: 350px;
     width: 300px;
   }
- .qualities .container  .card h3 {
+  .qualities .container .card h3 {
     font-size: 1.3rem;
   }
 }
+
 @media (max-width: 1080px) {
   .qualities .container .card {
     padding: 0 30px;
@@ -180,11 +171,9 @@
   .qualities .container {
     padding: 0;
   }
-  .qualities .container .card .title .description .location
-  {
+  .qualities .container .card .title .description .location {
     width: auto;
     height: auto;
-    border-radius;
   }
 }
 
@@ -193,16 +182,16 @@
     padding: 20px;
   }
 
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 18rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:90px;
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 18rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 90px;
+  }
 }
-}
-
 
 @media (max-width: 1000px) {
   .menu .container .dishes_container .card {
@@ -214,23 +203,24 @@
   .menu .container .dishes_container .card h3 {
     font-size: 1.6rem;
   }
-  
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 18rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:85px;
-}
+
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 18rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 85px;
+  }
 
   .reservation .container .banner img {
-  height: auto;
-}
+    height: auto;
+  }
 
-.reservation .container {
-  margin-left: 0;
-}
+  .reservation .container {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 910px) {
@@ -238,13 +228,14 @@
     font-size: 1.3rem;
   }
   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 12rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:35px;
-}
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 12rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 885px) {
@@ -260,32 +251,35 @@
     display: flex;
     justify-content: center;
   }
-  
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 15rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:70px;
+
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 15rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 70px;
+  }
 }
-}
+
 @media (max-width: 810px) {
   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 8rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:25px;
-}
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 8rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 25px;
+  }
   .team .container .team_container .card {
     width: 50%;
   }
   .team .container .team_container .card img {
     width: 220px;
   }
-    .qualities .container .card {
+  .qualities .container .card {
     flex: none;
     width: 400px;
     padding: 0;
@@ -298,47 +292,42 @@
   nav .showmenu {
     width: 96vw;
   }
-    .qualities .container  .card img {
-  display: flex;
-  flex-wrap: wrap;
-  height: 500px ;
-  width: 450px;
-  align-items: center;
-  }
- .qualities .container  .card h3 {
-    font-size: 1.3rem;
-    
-  }
-  .qualities .container
-  {
+  .qualities .container .card img {
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 450px;
+    align-items: center;
+  }
+  .qualities .container .card h3 {
+    font-size: 1.3rem;
+  }
+  .qualities .container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 786px) {
-  
-  
-  
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 15rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:60px;
-}
-.p1{
-  font-size: 14px;
-  font-weight: 500;
-}
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 15rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 60px;
+  }
+  .p1 {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 720px) {
-  
-   .tabloname h1, .tabloname h3{
-  font-size:25px;
-  
-}
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -364,7 +353,7 @@
   .reservation .container .banner img {
     width: 100%;
   }
-   .qualities .container .card {
+  .qualities .container .card {
     flex: none;
     width: 400px;
     padding: 0;
@@ -380,20 +369,21 @@
     border-radius: 0;
   }
   .logo {
-  width: 40%;
-  height: 10%;
-  overflow: hidden;
-  margin-right: 10px;
-}
+    width: 40%;
+    height: 10%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 12rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:35px;
-}
-.heroSection {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 12rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 35px;
+  }
+  .heroSection {
     padding: 0;
   }
 }
@@ -422,6 +412,7 @@
     font-size: 1.75rem;
   }
 }
+
 @media (max-width: 550px) {
   .team .container .team_container .card {
     width: 100%;
@@ -429,30 +420,31 @@
   .team .container .team_container .card img {
     width: 150px;
   }
-  
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 9rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:40px;
-}
-.p1{
-  margin-top:10px;
-  font-size: 10px;
-}
-.p2{
-  margin-left: 15px;
-}
-.left img {
-  width: 50%;
-  height: auto;
-  display: block;
-}
-.reservation .container {
-  margin-left: 1rem;
-}
+
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 9rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 40px;
+  }
+  .p1 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .p2 {
+    margin-left: 15px;
+  }
+  .left img {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+  .reservation .container {
+    margin-left: 1rem;
+  }
 }
 
 @media (max-width: 530px) {
@@ -475,7 +467,6 @@
 }
 
 @media (max-width: 485px) {
-
   .qualities .container .card {
     width: 100%;
   }
@@ -495,67 +486,71 @@
     width: 100%;
     padding: 20px 0;
   }
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 11rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:30px;
-}
-.p1{
-  margin-top:20px;
-}
-.p2{
-  margin-left: 15px;
-}
-.left img {
-  width: 60%;
-  height: auto;
-  display: block;
-  margin-left: 50px;
-}
-}
-@media(max-width:420px){
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 12rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:32px;
-}
-.p1{
-  margin-top:20px;
-}
-.p2{
-  margin-left: 15px;
-}
-.left img {
-  width: 60%;
-  height: auto;
-  display: block;
-  margin-left: 50px;
-}
-.p1{
-  margin-top:20px;
-  font-size: 15px;
-  font-weight: 400;
-}
-.p2{
-  margin-left: 15px;
-}
-.left img {
-  width: 60%;
-  height: auto;
-  display: block;
-  margin-left: 50px;
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 11rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 30px;
+  }
+  .p1 {
+    margin-top: 20px;
+  }
+  .p2 {
+    margin-left: 15px;
+  }
+  .left img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+  }
 }
 
-.reservation .container {
-  margin-left: 1rem;
+@media (max-width: 420px) {
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 12rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 32px;
+  }
+  .p1 {
+    margin-top: 20px;
+  }
+  .p2 {
+    margin-left: 15px;
+  }
+  .left img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+  }
+  .p1 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .p2 {
+    margin-left: 15px;
+  }
+  .left img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+  }
+
+  .reservation .container {
+    margin-left: 1rem;
+  }
 }
-}
+
 @media (max-width: 400px) {
   .who_are_we .container .text_banner {
     flex-direction: column;
@@ -564,58 +559,65 @@
     width: 100%;
     margin-bottom: 1.2rem;
   }
-   
-.tabloname h1, .tabloname h3{
-  font-size:30px;
+
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 30px;
+  }
 }
-}
+
 @media (max-width: 376px) {
   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 8rem;
-    }
- .tabloname h1, .tabloname h3{
-  font-size:28px;
-} 
-.p2{
-  margin-left: 15px;
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 8rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 28px;
+  }
+  .p2 {
+    margin-left: 15px;
+  }
+  .left img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: 50px;
+  }
 }
-.left img {
-  width: 60%;
-  height: auto;
-  display: block;
-  margin-left: 50px;
-}
-}
+
 @media (max-width: 370px) {
- .tabloname h1, .tabloname h3{
-  font-size:26px;
-} 
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 26px;
+  }
 }
+
 @media (max-width: 325px) {
   .reservation .container .banner .reservation_form_box h1 {
     font-size: 1.6rem;
   }
-  
-   .tabloname {
-      border: 3px solid black; 
-      padding: 30px; 
-      margin-top: 10rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:20px;
+
+  .tabloname {
+    border: 3px solid black;
+    padding: 30px;
+    margin-top: 10rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 20px;
+  }
 }
 
-}
-@media(max-height:600px){
-  
-   .tabloname {
-      border: 8px solid black; 
-      padding: 40px; 
-      margin-top: 5rem;
-    }
-.tabloname h1, .tabloname h3{
-  font-size:90px;
-}
+@media (max-height: 600px) {
+  .tabloname {
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 5rem;
+  }
+  .tabloname h1,
+  .tabloname h3 {
+    font-size: 90px;
+  }
 }
