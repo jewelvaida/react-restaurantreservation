@@ -23,8 +23,9 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  background: rgb(48,116,124);
+  background: rgb(48, 116, 124);
 }
+
 nav::after {
   content: "";
   position: absolute;
@@ -33,12 +34,14 @@ nav::after {
   left: 0;
   width: 100%;
 }
-.wholenav{
+
+.wholenav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   width: 20%;
   height: 10%;
@@ -51,20 +54,24 @@ nav::after {
   height: auto;
   display: block;
 }
+
 nav .navLinks {
   flex: 2;
 }
+
 nav .navLinks {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
 }
+
 nav .navLinks .links {
   display: flex;
   gap: 25px;
   margin-right: 10px;
 }
+
 nav .navLinks .links a {
   text-decoration: none;
   color: black;
@@ -72,11 +79,13 @@ nav .navLinks .links a {
   font-weight: 300;
   letter-spacing: 1.4px;
 }
+
 nav .navLinks .links a:hover {
   color: whitesmoke;
   transition: 0.3s;
   cursor: pointer;
 }
+
 nav .menuBtn {
   padding: 8px 20px;
   color: black;
@@ -86,71 +95,82 @@ nav .menuBtn {
   font-size: 16px;
   margin-left: 100px;
 }
+
 nav .menuBtn:hover {
   color: #fff;
   background: #222;
   transition: 0.3s;
   cursor: pointer;
 }
+
 nav .hamburger {
   display: none;
 }
+
 nav svg {
   font-size: 1.75rem;
 }
 
 /* Styling for home section */
 .heroSection {
-      display: flex;
-      flex-direction: column;
-      min-height: 80vh;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 15px;
-      animation: changeBackground 50s infinite; 
-      background-size: cover;
-      background-position: right;
-    }
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  animation: changeBackground 50s infinite;
+  background-size: cover;
+  background-position: right;
+}
 
-    @keyframes changeBackground {
-      0%, 100% {
-        background-image: url(/bg.png);
-      }
-      25% {
-        background-image: url(/bg2.png);
-      }
-      50% {
-        background-image: url(/bg3.png);
-      }
-      75% {
-        background-image: url(/bg4.png);
-      }
-    }
+@keyframes changeBackground {
+  0%,
+  100% {
+    background-image: url(/bg.png);
+  }
+  25% {
+    background-image: url(/bg2.png);
+  }
+  50% {
+    background-image: url(/bg3.png);
+  }
+  75% {
+    background-image: url(/bg4.png);
+  }
+}
+
 .heroSection .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .tabloname {
-      border: 8px solid black; 
-      padding: 50px; 
-      width: fit-content;
-      margin-top: 7rem;
-      background-color: whitesmoke;
-    }
-.tabloname h1, .tabloname h3{
+  border: 8px solid black;
+  padding: 50px;
+  width: fit-content;
+  margin-top: 7rem;
+  background-color: whitesmoke;
+}
+
+.tabloname h1,
+.tabloname h3 {
   font-size: 100px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(26, 25, 25);
 }
+
 .largeBox .title {
   display: flex;
   justify-content: center;
 }
+
 .dishes_title {
   display: flex;
   justify-content: right;
 }
+
 .heroSection .container .banner .title {
   font-size: 8.5rem;
   font-weight: 200;
@@ -166,9 +186,11 @@ nav svg {
   height: 395px;
   margin-top: 10px;
 }
+
 .heroSection .container .banner:last-child .imageBox {
   text-align: end;
 }
+
 .heroSection .container .banner:last-child {
   flex: 1;
 }
@@ -179,15 +201,15 @@ nav svg {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  /* background-color: #c9a28e; */
- padding-top: 100px;
+  padding-top: 100px;
 }
+
 .about .container {
   max-width: 1500px;
   min-width: 1500px;
   display: flex;
-  
 }
+
 .about .container .banner {
   flex: 1;
   display: flex;
@@ -195,13 +217,12 @@ nav svg {
   justify-content: space-evenly;
   padding-right: 30px;
 }
+
 .about .container .banner img {
   width: 700px;
   height: 700px;
   display: flex;
- 
   border-radius: 30px;
-  
 }
 
 .heading {
@@ -209,6 +230,7 @@ nav svg {
   font-size: 4rem;
   color: #111;
 }
+
 .about .container .banner .mid {
   width: 65%;
   font-size: 18px;
@@ -217,20 +239,23 @@ nav svg {
   word-spacing: 5px;
   background-color: white;
   padding: 30px 20px;
-  border-radius: 30px; 
- font-size: x-large;
+  border-radius: 30px;
+  font-size: x-large;
 }
-.top
-{background-color: white;
+
+.top {
+  background-color: white;
   padding: 20px 20px;
   border-radius: 30px;
 }
+
 .about .container .banner .top p {
   font-size: 18px;
   font-weight: 400;
   color: #111;
   letter-spacing: 2px;
 }
+
 .about .container .banner a {
   border: 1px solid black;
   padding: 8px 28px;
@@ -239,11 +264,12 @@ nav svg {
   width: fit-content;
   align-items: center;
   justify-content: center;
-  text-decoration: none;  
+  text-decoration: none;
   font-size: 15px;
   color: #111;
   font-size: larger;
 }
+
 .about .container .banner a span {
   margin-left: 1rem;
   padding: 6px;
@@ -251,15 +277,18 @@ nav svg {
   border-radius: 100%;
   color: #fff;
 }
+
 .about .container .banner a:hover {
   color: #fff;
   background: #111;
   transition: ease-in-out 0.3s;
 }
+
 .about .container .banner a:hover span {
   background: #fff;
   color: #111;
 }
+
 /* Styling for qualities section */
 .qualities {
   display: flex;
@@ -267,47 +296,46 @@ nav svg {
   padding: 75px 20px;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .qualities .container {
   min-width: 1500px;
   max-width: 1500px;
   display: flex;
-
 }
 
 .qualities h1 {
- font-size: 35px;
+  font-size: 35px;
   text-align: center;
   align-items: end;
   justify-content: center;
 }
+
 .qualities .container .card {
   flex: 1;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding:100px;
+  padding: 100px;
   padding-bottom: 300px;
-
-  
 }
+
 .qualities .container .card img {
   margin-bottom: 25px;
   padding: 50px 50px;
   width: 250%;
   height: 60%;
   border-radius: 100px;
-  
 }
+
 .qualities .container .card .title {
   font-size: 1.8rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 12px;
 }
+
 .qualities .container .card .description {
   font-size: 18px;
   color: #333;
@@ -323,6 +351,7 @@ nav svg {
   padding: 50px 20px;
   background-color: #887b6c;
 }
+
 .menu .container {
   max-width: 1500px;
   min-width: 1500px;
@@ -330,26 +359,23 @@ nav svg {
   flex-direction: column;
   align-items: center;
 }
+
 .menu .container .heading_section {
   text-align: center;
   margin-bottom: 12px;
-  
 }
-/* .heading_section h1
-{color: white;} */
 
 .menu .container .heading_section p {
   color: white;
- 
   font-size: 30px;
   font-weight: 300;
 }
-
 
 .menu .container .dishes_container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .menu .container .dishes_container .card {
   width: 25%;
   position: relative;
@@ -358,19 +384,21 @@ nav svg {
   position: relative;
   color: rgb(255, 186, 58);
 }
+
 .menu .container .dishes_container .card img {
   width: 100%;
   height: 370px;
   object-fit: cover;
   border-radius: 30px;
-  display:block; 
-  
+  display: block;
 }
+
 .menu .container .dishes_container .card h3 {
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
 }
+
 .menu .container .dishes_container .card button {
   position: absolute;
   top: 40px;
@@ -382,131 +410,40 @@ nav svg {
   border-radius: 20px;
   font-size: 16px;
 }
+
 .menu .container .dishes_container .card:hover img {
   transition: 0.3s;
   transform: scale(1.03);
 }
-/* Styling for teams section */
-.team {
-  display: flex;
-  min-height: 60vh;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.team .container {
-  max-width: 1500px;
-  min-width: 1500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team .container .heading_section {
-  text-align: center;
-  margin-bottom: 12px;
-}
-.team .container .heading_section p {
-  color: #333;
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-}
-.team .container .team_container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.team .container .team_container .card {
-  width: 25%;
-  padding: 20px;
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team .container .team_container .card img {
-  width: 175px;
-  margin-bottom: 1rem;
-}
-.team .container .team_container .card h3 {
-  font-size: 1.5rem;
-}
-.team .container .team_container .card p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #333;
-}
-
-/* Styling for who_are_we section */
-.who_are_we {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-}
-.who_are_we .container {
-  max-width: 1500px;
-  min-width: 1500px;
-  display: flex;
-}
-.who_are_we .container .text_banner {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.who_are_we .container .text_banner .card {
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-}
-.who_are_we .container .text_banner .card p {
-  color: #333;
-  font-size: 25px;
-  font-weight: 200;
-}
-.who_are_we .container .image_banner {
-  position: relative;
-  flex: 2;
-  display: flex;
-  justify-content: center;
-}
-.who_are_we .container .image_banner img {
-  width: 500px;
-  height: 635px;
-}
-.who_are_we .container .image_banner .gradient_bg {
-  position: absolute;
-  left: -80px;
-  top: 0;
-}
 
 /* Styling for footer section */
 footer {
-  background:  rgb(48,116,124);
+  background: rgb(48, 116, 124);
   display: flex;
   justify-content: center;
   align-items: center;
   height: fit-content;
   padding: 20px 20px 10px 20px;
 }
+
 footer .container {
   max-width: 1500px;
   min-width: 1500px;
   display: flex;
   flex-direction: column;
 }
+
 footer .container .banner {
   display: flex;
   justify-content: space-between;
 }
+
 footer .container .banner:first-child {
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
 }
+
 footer .container .banner:first-child::after {
   content: "";
   position: absolute;
@@ -515,20 +452,24 @@ footer .container .banner:first-child::after {
   height: 3px;
   background: #111;
 }
-.p1{
-  margin-top:20px;
+
+.p1 {
+  margin-top: 20px;
 }
-.p2{
+
+.p2 {
   margin-left: 45px;
 }
+
 .left img {
   width: 40%;
   height: auto;
   display: block;
-} 
+}
+
 /* Styling for reservation section */
 .reservation {
-  display: flex;;
+  display: flex;
   min-height: 75vh;
   padding: 30px 20px;
   justify-content: center;
@@ -679,30 +620,35 @@ div select option {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background:rgb(48,116,124);
+  background: rgb(48, 116, 124);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
 }
+
 .notFound .container {
   max-width: 1500px;
   text-align: center;
 }
+
 .notFound .container img {
   margin-bottom: 2rem;
 }
+
 .notFound .container h1 {
   font-size: 2.75rem;
   font-weight: 300;
   color: #222;
   margin-bottom: 0.5rem;
 }
+
 .notFound .container p {
   font-size: 18px;
   font-weight: 300;
   color: #555;
   margin-bottom: 1.5rem;
 }
+
 .notFound .container a {
   border: 1px solid black;
   padding: 8px 28px;
@@ -716,6 +662,7 @@ div select option {
   font-size: 15px;
   color: #111;
 }
+
 .notFound .container a span {
   margin-left: 1rem;
   padding: 6px;
@@ -723,11 +670,13 @@ div select option {
   border-radius: 100%;
   color: #fff;
 }
+
 .notFound .container a:hover {
   color: #fff;
   background: #111;
   transition: ease-in-out 0.3s;
 }
+
 .notFound .container a:hover span {
   background: #fff;
   color: #111;
