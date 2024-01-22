@@ -5,7 +5,6 @@ const Qualities = () => {
   return (
     <section className="qualities" id="qualities">
       <div className="container">
-        
         {data[0].ourQualities.map((element) => (
           <div className="card" key={element.id}>
             <h1>Our Branches in</h1>
