@@ -10,3 +10,5 @@
  Quiambao, Aeron Justin - Frontend
 
  Salangsang, Arsenic - Frontend
+
+*deployed frontend is not connected to backend (deployment issue)
