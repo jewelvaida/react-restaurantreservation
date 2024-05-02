@@ -1,5 +1,4 @@
 # react-restaurantreservation
- TUP WebDev Project 
 
  Group - BSIS - NS - 3AB - M
 
