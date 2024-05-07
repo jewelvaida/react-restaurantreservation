@@ -4,6 +4,28 @@ import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import emailjs from "emailjs-com";
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // Assuming you have a form reference named 'form'
+  const form = e.target;
+
+  emailjs
+    .sendForm("gmail", "template_38uk4lt", form, {
+      publicKey: "K9aWDkq39PcTgrWpr",
+    })
+    .then(
+      () => {
+        console.log("SUCCESS!");
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+      }
+    );
+  e.target.reset();
+};
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -14,7 +36,6 @@ const Reservation = () => {
   const [phone, setPhone] = useState("");
   const [branch, setBranch] = useState("");
   const [person, setPerson] = useState("");
-  const [buttonClicked, setButtonClicked] = useState(false); // New state variable
   const branches = [
     "BF Resort",
     "BF Homes",
@@ -25,7 +46,6 @@ const Reservation = () => {
 
   const handleReservation = async (e) => {
     e.preventDefault();
-    setButtonClicked(true); // Set the buttonClicked state to true when the button is clicked
     try {
       const { data } = await axios.post(
         "http://localhost:4000/api/v1/reservation/send",
@@ -61,8 +81,7 @@ const Reservation = () => {
     }
   };
 
-  // Log the values and button status to the console
-  console.log("Button Clickeds:", buttonClicked);
+  // Log the values to the console
   console.log("User Input Values:", {
     firstName,
     lastName,
@@ -84,7 +103,7 @@ const Reservation = () => {
           <div className="reservation_form_box">
             <h1>MAKE A RESERVATION</h1>
             <p>For Further Questions, Please Call</p>
-            <form>
+            <form onSubmit={sendEmail}>
               <div>
                 <input
                   type="text"
@@ -149,7 +168,7 @@ const Reservation = () => {
                   onChange={(e) => setPerson(e.target.value)}
                 />
               </div>
-              <button type="submit" onClick={handleReservation}>
+              <button type="submit">
                 RESERVE NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />
