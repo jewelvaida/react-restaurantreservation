@@ -13,9 +13,7 @@ const sendEmail = (e) => {
   const form = e.target;
 
   emailjs
-    .sendForm("gmail", "template_38uk4lt", form, {
-      publicKey: "K9aWDkq39PcTgrWpr",
-    })
+    .sendForm("service_1u29fgx", "template_38uk4lt", e.target,"7IL-F15EJcBa0qDwo")
     .then(
       () => {
         console.log("SUCCESS!");
@@ -108,12 +106,14 @@ const Reservation = () => {
                 <input
                   type="text"
                   placeholder="First Name"
+                  name="fname"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
+                  name="lname"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
@@ -137,6 +137,7 @@ const Reservation = () => {
                   type="email"
                   placeholder="Email"
                   className="email_tag"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
