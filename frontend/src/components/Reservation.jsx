@@ -122,12 +122,14 @@ const Reservation = () => {
                 <input
                   type="date"
                   placeholder="Date"
+                  name="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
                 />
                 <input
                   type="time"
                   placeholder="Time"
+                  name="time"
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
                 />
@@ -150,6 +152,7 @@ const Reservation = () => {
               </div>
               <div>
                 <select
+                  name="branch"
                   value={branch}
                   onChange={(e) => setBranch(e.target.value)}
                 >
