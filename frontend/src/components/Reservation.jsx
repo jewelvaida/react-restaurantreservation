@@ -24,6 +24,11 @@ const sendEmail = (e) => {
   e.target.reset();
 };
 
+const getTimePeriod = (timeString) => {
+  const hours = parseInt(timeString.split(":")[0]);
+  return hours >= 12 ? "PM" : "AM";
+};
+
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -34,6 +39,7 @@ const Reservation = () => {
   const [branch, setBranch] = useState("");
   const [service, setService] = useState("");
   const [person, setPerson] = useState("");
+  const [timePeriod, setTimePeriod] = useState(""); // Added state to hold time period (AM/PM)
   const branches = [
     "BF Resort",
     "BF Homes",
@@ -87,6 +93,13 @@ const Reservation = () => {
       toast.error(error.response.data.message);
     }
   };
+
+  // Update time period whenever time changes
+  React.useEffect(() => {
+    if (time) {
+      setTimePeriod(getTimePeriod(time));
+    }
+  }, [time]);
 
   // Log the values to the console
   console.log("User Input Values:", {
@@ -147,6 +160,11 @@ const Reservation = () => {
                   onChange={(e) => setTime(e.target.value)}
                   style={{ width: "48%" }}
                 />
+                      <input
+    type="hidden"
+    name="timePeriod"
+    value={timePeriod}
+  />
               </div>
               <div style={{ marginBottom: "10px" }}>
                 <input
