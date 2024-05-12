@@ -224,6 +224,7 @@ const Reservation = () => {
                 <input
                   type="number"
                   placeholder="Pax"
+                  name="person"
                   value={person}
                   onChange={(e) => setPerson(e.target.value)}
                   style={{ width: "100%" }}
