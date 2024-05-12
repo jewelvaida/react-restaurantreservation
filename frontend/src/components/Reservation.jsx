@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
-import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import emailjs from "emailjs-com";
@@ -13,7 +12,7 @@ const sendEmail = (e) => {
   const form = e.target;
 
   emailjs
-    .sendForm("service_1u29fgx", "template_38uk4lt", e.target,"7IL-F15EJcBa0qDwo")
+    .sendForm("service_1u29fgx", "template_38uk4lt", e.target, "7IL-F15EJcBa0qDwo")
     .then(
       () => {
         console.log("SUCCESS!");
@@ -33,12 +32,20 @@ const Reservation = () => {
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
   const [branch, setBranch] = useState("");
+  const [service, setService] = useState("");
   const [person, setPerson] = useState("");
   const branches = [
     "BF Resort",
     "BF Homes",
     "Sct. Borromeo",
     "South, Las Pinas",
+  ];
+  const services = [
+    "Service 1",
+    "Service 2",
+    "Service 3",
+    "Service 4",
+    "Service 5",
   ];
   const navigate = useNavigate();
 
@@ -55,6 +62,7 @@ const Reservation = () => {
           date,
           time,
           branch,
+          service,
           person,
         },
         {
@@ -72,6 +80,7 @@ const Reservation = () => {
       setTime("");
       setDate("");
       setBranch("");
+      setService("");
       setPerson("");
       navigate("/success");
     } catch (error) {
@@ -88,6 +97,7 @@ const Reservation = () => {
     date,
     time,
     branch,
+    service,
     person,
   });
 
@@ -98,17 +108,18 @@ const Reservation = () => {
           <img src="/steak.jpeg" alt="res" />
         </div>
         <div className="banner">
-          <div className="reservation_form_box">
-            <h1>MAKE A RESERVATION</h1>
-            <p>For Further Questions, Please Call</p>
+          <div className="reservation_form_box" style={{ maxWidth: "400px", margin: "0 auto" }}>
+            <h1 style={{ textAlign: "center" }}>MAKE A RESERVATION</h1>
+            <p style={{ textAlign: "center" }}>For Further Questions, Please Call</p>
             <form onSubmit={sendEmail}>
-              <div>
+              <div style={{ marginBottom: "10px" }}>
                 <input
                   type="text"
                   placeholder="First Name"
                   name="fname"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
+                  style={{ width: "48%", marginRight: "4%" }}
                 />
                 <input
                   type="text"
@@ -116,15 +127,17 @@ const Reservation = () => {
                   name="lname"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
+                  style={{ width: "48%" }}
                 />
               </div>
-              <div>
+              <div style={{ marginBottom: "10px" }}>
                 <input
                   type="date"
                   placeholder="Date"
                   name="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
+                  style={{ width: "48%", marginRight: "4%" }}
                 />
                 <input
                   type="time"
@@ -132,9 +145,10 @@ const Reservation = () => {
                   name="time"
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
+                  style={{ width: "48%" }}
                 />
               </div>
-              <div>
+              <div style={{ marginBottom: "10px" }}>
                 <input
                   type="email"
                   placeholder="Email"
@@ -142,19 +156,24 @@ const Reservation = () => {
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  style={{ width: "100%" }}
                 />
+              </div>
+              <div style={{ marginBottom: "10px" }}>
                 <input
                   type="number"
                   placeholder="Phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  style={{ width: "100%" }}
                 />
               </div>
-              <div>
+              <div style={{ marginBottom: "10px" }}>
                 <select
                   name="branch"
                   value={branch}
                   onChange={(e) => setBranch(e.target.value)}
+                  style={{ width: "100%" }}
                 >
                   <option value="" disabled>
                     Select a Branch
@@ -165,14 +184,34 @@ const Reservation = () => {
                     </option>
                   ))}
                 </select>
+              </div>
+              <div style={{ marginBottom: "10px" }}>
+                <select
+                  name="service" // Name attribute for service
+                  value={service} // Value from state
+                  onChange={(e) => setService(e.target.value)} // OnChange handler to update state
+                  style={{ width: "100%" }}
+                >
+                  <option value="" disabled>
+                    Select a Service
+                  </option>
+                  {services.map((serviceOption) => (
+                    <option key={serviceOption} value={serviceOption}>
+                      {serviceOption}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div style={{ marginBottom: "10px" }}>
                 <input
                   type="number"
                   placeholder="Pax"
                   value={person}
                   onChange={(e) => setPerson(e.target.value)}
+                  style={{ width: "100%" }}
                 />
               </div>
-              <button type="submit">
+              <button type="submit" style={{ width: "100%" }}>
                 RESERVE NOW{" "}
                 <span>
                   <HiOutlineArrowNarrowRight />

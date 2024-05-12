@@ -2,7 +2,7 @@ import ErrorHandler from "../error/error.js";
 import { Reservation } from "../models/reservationSchema.js";
 
 export const sendReservation = async (req, res, next) => {
-  const { firstName, lastName, email, phone, date, time, branch, person } =
+  const { firstName, lastName, email, phone, date, time, branch, service, person } =
     req.body;
   if (
     !firstName ||
@@ -12,6 +12,7 @@ export const sendReservation = async (req, res, next) => {
     !date ||
     !time ||
     !branch ||
+    !service ||
     !person
   ) {
     return next(
@@ -28,6 +29,7 @@ export const sendReservation = async (req, res, next) => {
       date,
       time,
       branch,
+      service,
       person,
     });
     res.status(200).json({
